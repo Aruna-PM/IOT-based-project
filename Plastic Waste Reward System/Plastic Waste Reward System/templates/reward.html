@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <static>Reward System</static>
+	<!--<link rel="stylesheet" href="style.css"> <!-- User created css file -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <p href="/index"><img src="/static/logo.png"></p>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/contact">CONTACT US</a></li>
+					<li><a href="/index">LOGOUT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> Reward System </h1>
+    </section>
+    
+    <!-- Reward Section -->
+    <section>
+        <h2>Transaction Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Reward Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example data, replace with server-side rendering or fetch 
+                <tr>
+                    <td>2024-11-15</td>
+                    <td>10:00 AM</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>2024-11-14</td>
+                    <td>3:00 PM</td>
+                    <td>$20</td>
+                </tr>-->
+				
+				{% for reward in rewards %}
+				<tr>
+					<td>{{ reward[0] }}</td>
+					<td>{{ reward[1] }}</td>
+					<td>{{ reward[2] }}</td>
+				</tr>
+				{% endfor %}
+            </tbody>
+        </table>
+        <!--<p><strong>Total Reward:</strong> $70</p>-->
+		<p><strong>Total Reward:</strong> {{ total }}</p>
+        <a href="/claim">Claim Reward</a>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        function showMenu() {
+            document.getElementById("navLinks").style.right = "0";
+        }
+
+        function hideMenu() {
+            document.getElementById("navLinks").style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

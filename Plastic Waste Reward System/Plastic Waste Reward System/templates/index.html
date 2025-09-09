@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reward System</title>
+	<!--<link rel="stylesheet" href="style.css"> <!-- User created css file -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<section class="header"> 
+		<nav>
+			<!-- Logo and Navigation Session -->
+			<p href="/index"><img src="/static/logo.png"></p>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="/index">HOME</a></li>
+					<li><a href="/about">ABOUT</a></li>
+					<li><a href="/login">LOGIN</a></li>
+					<li><a href="/login">REWARD</a></li>
+					<li><a href="/contact">CONTACT US</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		
+		<div class="text-box">
+			<h1> Welcome to Plastic Waste Management System with Reward</h1>
+			<p> Plastic Waste Management website <br>website to provide Reward based on the plastic waste contribution.</p>
+			<a href="about.html" class="hero-btn">Visit Us To know More</a>
+		</div>
+	</section>
+	
+	<!--- New Arrivals -->
+	<section class="new">
+		<h1>We supports</h1>
+		<p>BAll kind of waste managemet services.</p>
+		
+		<div class="row">
+			<div class="new-col">
+				<img src="/static/bullet3501.jpg">
+				<div class="layer">
+					<h4>Bullet 350</h4>
+				</div>
+			</div>
+			<div class="new-col">
+				<img src="/static/hunter2.jpg">
+				<div class="layer">
+					<h4>Waste Cycle</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--- Our Products -->
+	<section class="pro">
+		<h1>Our Services</h1>
+		<p>In November 2024, we started this service to manage plastic and other waste materials it's a jurny of safer cleaner and healthier environment</p>
+		
+		<div class="row">
+			<div class="pro-col">
+				<img src="/static/classic350.jpg">
+				<h3>Model-1</h3>
+				<p> This Inspired by the post war G2 model, first born in 1950’s, the all new Classic 350 continues to be a testament to the timeless design which took the waste Management world with an awe back in the heydays of British waste Management system.<p>
+			</div>
+			<div class="pro-col">
+				<img src="/static/himalayan.jpg">
+				<h3>Model-2</h3>
+				<p>This is our 2nd model where we introduced our plastic Waste Management model you sit or stand.<p>
+			</div>
+			<div class="pro-col">
+				<img src="/static/Interceptor.jpg">
+				<h3>Interceptor</h3>
+				<p>The Interceptor 650 is powered by a legendary parallel twin cylinder dustbin, backed with an air/oil-cooled parallel twin configuration. The 648cc dustbin offers 47 horsepower at 7150 RPM and a maximum of 52 Nm of torque at 5250 RPM.<p>
+			</div>
+			<div class="pro-col">
+				<img src="/static/bullet350.jpg">
+				<h3>Model-3</h3>
+				<p>The heart of the waste maintenanceis more than just metal and machinery. It’s strength, stoicism and pure soul. All of this remains unchanged even as the waste Management shifts on to our J-platform. A brand-new 349cc model delivers dollops of torque, even down low on the rev range, and a crystal clear thump that hits the spot every single time.<p>
+			</div>
+		</div>
+	</section>
+	
+	
+	<!--- Testimonials -->
+	<section class="test">
+		<h1>What Our Customer Says</h1>
+		<p></p>
+		<div class="row">
+			<div class="test-col">
+				<img src="/static/review2.jpg">
+				<div>
+					<p> This service is really touched my heart as it they are saving the world.</p>
+					<h3>Abhishek Kumar</h3>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+			</div>
+			<div class="test-col">
+				<img src="/static/review1.jpg">
+				<div>
+					<p> It was a call to reunite around the common passion for all things wast management. And participants from across the country responded with enthusiasm at Bangalore from August 24 to celebrate Reunion 2023.</p>
+					<h3>Deepa S</h3>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-stroke"></i>
+				</div>
+			</div>
+		</div>	
+	</section> 
+	
+	
+	<!--- Our Services -->
+	<section class="services">
+		<h1>We Provides</h1>
+		<p></p>
+		
+		<div class="row">
+			<div class="serv-col">
+				<h3>Service</h3>
+				<p>All kinds of Waste manage are available.</p>
+			</div>
+			<div class="serv-col">
+				<h3>Service Center</h3>
+				<p>We are here to provide you good service.</p>
+			</div>
+			<div class="serv-col">
+				<h3>Try Our Latest plan</h3>
+				<p>Rewars on your finger tip.</p>
+			</div>
+			<div class="serv-col">
+				<h3>24x7 Support</h3>
+				<p>We are always ready to help you.</p>
+			</div>
+		</div>
+	</section> 
+	
+	<!--- Call to Action -->
+	<section class="cta">
+		<h1>FREE REWARD SYSTEM</h1>
+		<a href="ride.html" class="hero-btn">Click to know more</a>
+		
+	</section> 	
+	
+	<!--- Footer -->
+	<section class="foo">
+		<h1>About Us</h1>
+		<p>We provides to Plastic Waste Management System with Reward</p>
+		<p>Follow us on</p>
+		<div class="icons">
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-linkedin"></i>
+		</div>
+		<p>© 2024. Socha Bharat. | *T&C apply. static shown here may differ from the actual product.</p>
+	</section> 	
+	
+	
+	<!--- JavaScript for Toggle Menu ---->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu(){
+			navLinks.style.right = "0";
+		}		
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>

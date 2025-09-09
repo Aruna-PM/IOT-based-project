@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Royal Enfield</title>
+	<!--<link rel="stylesheet" href="style.css"> <!-- User created css file -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<section class="sub-header"> 
+		<nav>
+			<!-- Logo and Navigation Session -->
+			<p href="/index"><img src="/static/logo.png"></p>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="/index">HOME</a></li>
+					<li><a href="/about">ABOUT</a></li>
+					<li><a href="/login">LOGIN</a></li>
+					<li><a href="/contact">CONTACT US</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		
+		<h1> About Us </h1>
+	</section>
+	
+	<section class="about-us"> 
+		<div class="row">
+			<div class="about-col">
+				<h1> We are the world's first waste management Inustry</h1>
+				<p> From November 2024, Plastic Waste Management website <br>website to provide Reward based on the plastic waste contribution.</p>
+				<p>The duo win a contract to supply precision parts to the waste Small Arms Factory of cleaning,  To celebrate this prestigious order.</p>
+				<p>Our Aim to provide clearing world.</p>
+				<p>Continuous development results in a range of 4 models, we also introduced new tricks to attract people.</p>
+				<a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+			</div>
+			<div class="about-col">
+				<img src="/static/moto1.jpg">
+			</div>
+		</div>
+	</section>
+	<!--- Footer -->
+	<section class="foo">
+		<h1>About Us</h1>
+		<p>Waste management Completed 1 years in this sector.</p>
+		<p>Follow us on</p>
+		<div class="icons"> 
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-linkedin"></i>
+		</div>
+		<p>© 2024. Socha Bharat. | *T&C apply. static shown here may differ from the actual product.</p>
+	</section> 	
+	
+	
+	<!--- JavaScript for Toggle Menu ---->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu(){
+			navLinks.style.right = "0";
+		}		
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>

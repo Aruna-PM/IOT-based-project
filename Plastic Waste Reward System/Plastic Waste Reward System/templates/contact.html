@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reward System</title>
+	<!--<link rel="stylesheet" href="style.css"> <!-- User created css file -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<section class="sub-header"> 
+		<nav>
+			<!-- Logo and Navigation Session -->
+			<p href="/index"><img src="/static/logo.png"></p>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="/index">HOME</a></li>
+					<li><a href="/about">ABOUT</a></li>
+					<li><a href="/login">LOGIN</a></li>
+					<li><a href="/contact">CONTACT US</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		
+		<h1> Contact Us </h1>
+	</section>
+	
+	<!--- Contact Us -->
+	<section class="location">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.230009250523!2d77.7119655748928!3d12.957128587356863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13d01d0d894d%3A0x24e69549aa77c652!2sIQ%20Project%20Center%20%7C%20IOT%20%7C%20Robotics%20%7C%20ML%20%7C%20Image%20processing%20%7C%20CS%20%26%20IT%20%7C%20MCA%20%7C%20ECE%20%7C%20EEE%20%7C%20BE%20%7C%20ME%20%7C%20Training%20Institute!5e0!3m2!1sen!2sin!4v1731755661759!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+
+	<section class="contact-us">
+		<div class="row">
+			<div class="contact-col">
+					<div>
+						<i class="fa fa-home"></i>
+						<span>
+							<h5>9th-Block, Tower C, Jayanagar</h5>
+							<p>Bangalore, Karnataka, India</p>
+						</span>
+					</div>
+					<div>
+						<i class="fa fa-phone"></i>
+						<span>
+							<h5>+91-9535863655</h5>
+							<p>Nithyashree C</p>
+						</span>
+					</div>
+					<div>
+						<i class="fa fa-envelope"></i>
+						<span>
+							<h5>info@iqprojects.com</h5>
+							<p>Email us your query</p>
+						</span>
+					</div>
+					<!--<div class="contact-col">
+						<form action="form-handler.php" method="post">
+							<input type="text" name="name" placeholder="Enter Your Name" required>
+							<input type="email" name="email" placeholder="Enter email address" required>
+							<input type="text" name="subject" placeholder="Enter Your Subject" required>
+							<textarea rows="10" name="message" placeholder="Message"></textarea>
+							<button type="submit" class="hero-btn red-btn">Send Message</button> 
+						</form>
+					</div>-->
+			</div>
+		</div>
+	</section>
+	<!--- Footer -->
+	<section class="foo">
+		<h1>About Us</h1>
+		<p>We are first Plastic waste management system and service with Reward system</p>
+		<p>Follow us on</p>
+		<div class="icons"> 
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-linkedin"></i>
+		</div>
+		<p>© 2024. Socha Bharat. | *T&C apply. static shown here may differ from the actual product.</p>
+	</section> 	 	
+	
+	
+	<!--- JavaScript for Toggle Menu ---->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu(){
+			navLinks.style.right = "0";
+		}		
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>

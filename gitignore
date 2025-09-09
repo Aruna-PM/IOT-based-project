@@ -1,0 +1,71 @@
+# ---- OS-specific ----
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.so
+*.egg-info/
+*.log
+.env
+.venv/
+ENV/
+env/
+venv/
+.ipynb_checkpoints/
+
+# ---- Arduino / IoT ----
+*.hex
+*.elf
+*.bin
+*.map
+*.o
+*.d
+*.lst
+*.a
+
+# ---- Executables / Installers ----
+*.exe
+*.msi
+*.deb
+*.rpm
+*.dmg
+*.pkg
+*.tar.gz
+*.zip
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Logs / Temporary ----
+*.tmp
+*.bak
+*.old
+*.orig
+*.log
+
+# ---- Node.js (if you use frontend in project) ----
+node_modules/
+dist/
+build/
+
+# ---- Git ----
+.gitignore

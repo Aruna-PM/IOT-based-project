@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reward System</title>
+	<!--<link rel="stylesheet" href="style.css"> <!-- User created css file -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<section class="sub-header"> 
+		<nav>
+			<!-- Logo and Navigation Session -->
+			<p href="/index."><img src="/static/logo.png"></p>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="/index">HOME</a></li>
+					<li><a href="/about">ABOUT</a></li>
+                    <li><a href="/contact">CONTACT US</a></li>
+					<li><a href="/index">LOGOUT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		
+		<h1> Claim Reward </h1>
+	</section>
+	
+	<!--- Comment section -->
+	<section class="comment">
+		<div class="row">
+				<div class="comment-box">
+					<h1>Please fill Bank details to Claim.</h1>
+					<form class="comment-form">
+						<legend>Ener Amount*</legend>
+						<input type="text" placeholder="Amount" required><br>
+						
+						<legend>Full Name*</legend>
+						<input type="text" placeholder="Name" required><br>
+						
+						<legend>Bank Name*</legend>
+						<input type="text" id="bank" placeholder="Bank Name" name="bank_name" required><br>
+						
+						<legend>Account Number*</legend>
+						<input type="account" placeholder="Account Number" required><br>
+						
+						<legend>IFSC Code*</legend>
+						<input type="ifsc" placeholder="IFSC Code" required><br>
+						
+						<legend>Mobile Number*</legend>
+						<input type="mob" placeholder="+91-" required><br>
+						
+						<h3>Disclaimer:</h3>
+						<p>By signing this form/checking this box, you acknowledge and agree that we may use the information you share with us, to communicate with you through e-mails, text messages, WhatsApp and calls, in order to provide our product or service related information and/or for promotional and marketing purposes. All information provided will be secured and processed as per our privacy policy.</p>						
+						<p>Accept the terms and conditions as well as privacy policy.</p>
+						<button type="submit" class="hero-btn red-btn">Submit</button>
+					</form>
+				</div>
+		</div>
+	</section> 	
+	
+	<!--- Footer -->
+	<section class="foo">
+		<h1>About Us</h1>
+		<p>Waste management service celebrates 1 years of Pure Cleaning and Reward System.</p>
+		<p>Follow us on</p>
+		<div class="icons"> 
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-linkedin"></i>
+		</div>
+		<p>© 2024. Socha Bharat. | *T&C apply. static shown here may differ from the actual product.</p>
+	</section>  	
+	
+	
+	<!--- JavaScript for Toggle Menu ---->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu(){
+			navLinks.style.right = "0";
+		}		
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+	
+</body>
+</html>
